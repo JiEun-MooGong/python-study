@@ -1,0 +1,90 @@
+#파이썬 오류 
+
+
+
+이름에러 (NameError)  명령의 철자 오류
+
+TraceBack (most recent call last):
+  File "<pyshell#7>", line 1 ,in <module>
+     PRINT("Hello")
+NameError: name "PRINT" in not defined
+
+
+
+
+
+외부모듈 호출오류 (Import Error) Import 로 호출 모듈이름 오류
+
+TraceBack (most recent call last):
+  File "<pyshell#10>", line 11 ,in <module>
+     import turtl as t
+ImportError: No module named 'turtl'
+
+
+
+
+
+속성 오류 (AttributeError)  호출 모듈의 함수, 변수를 잘못 입력
+
+TraceBack (most recent call last):
+  File "<pyshell#18>", line 21 ,in <module>
+     t.forward(50)
+AttributeError: 'module' object has no attribute 'forward'
+
+
+
+
+타입 에러 (TypeError) 함수에 전달할 인자가 빠진 경우
+
+TypeError : ... missing... required positional argument : ....
+
+
+
+
+값 에러 (ValueError)  정수, 문자 간 값 변환이 불가능 오류
+
+ValueError : invalid literal for ... ():
+
+
+
+
+
+구문에러 (SyntaxError)  명령의 조건 중 따옴표 오류 등, 구문오류
+
+
+
+1) 따옴표나 괄호 닫기 오류
+
+SyntaxError : EOL while scanning string literal
+SyntaxError : unexpected EOF while parsing
+
+
+2) 철자나 따옴표 : 를 뺴먹은 경우
+
+SyntaxError : invalid syntax
+
+
+3) 반복 블록의 들여쓰기 오류
+
+SyntaxError : expected as indented block
+SyntaxError : unindent does not match anu outer indentation level
+SyntaxError : unexpected indent   (들여쓰지 말아야 할 곳을 들여쓴 경우)
+
+
+
+
+이벤트 타입/키 이름 오류 (_tkinter.TclError)
+
+
+
+TraceBack (most recent call last):
+  File "<pyshell#10>", line 31 ,in <module>
+     t.onkeyperss(turn_down, "Down")
+  File "<string>", line 8 in onkeypress
+      .... < 중 간 생 략 > ......
+   self.tk.call(what + (sequence, cmd))
+_tkinter.TclError: bad event type or keysum "키 이름"
+
+
+
+출처: https://systemtrade.tistory.com/323 [시스템매매]
