@@ -88,3 +88,9 @@ _tkinter.TclError: bad event type or keysum "키 이름"
 
 
 출처: https://systemtrade.tistory.com/323 [시스템매매]
+
+
+
+Fatal error in launcher: Unable to create process using 
+- python 버전과 pip 버전이 맞지않아서?  => python.exe -m pip install --upgrade pip
+- 경로 에러 ? => python -m 추가
